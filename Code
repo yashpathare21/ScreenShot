@@ -1,0 +1,24 @@
+# if the screenshot of the same name exists it will override
+# by default
+
+import pyscreenshot
+
+try:
+    # this will take the screenshot
+    print("Taking Screenshot...")
+    image = pyscreenshot.grab()
+
+    # this will show the screenshot after taking it. (i.e. optionl)
+    image.show()
+
+    # this variable contains location of "where to save the file"
+    loc = "C:\\Users\\admin\\OneDrive\\Desktop\\Py Screenshot.png"
+
+    # this will save the screenshot
+    image.save(loc)
+
+finally:
+    # confirmation
+    print("Done...")
+
+
